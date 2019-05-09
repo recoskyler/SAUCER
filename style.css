@@ -1,0 +1,72 @@
+html {
+    width:300px;
+    height:300px;
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin:0;
+    padding:0;
+}
+
+#gridCont a {
+    padding:0px;
+    padding-top:15px;
+    padding-bottom:15px;
+    margin:0;
+    width:100%;
+    font-size:18px;
+    color:white;
+    background-color:#f40057;
+    text-decoration: none;
+    float: left;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    cursor: default;;
+}
+
+#saucerIcon {
+    width:100px;
+    height:100px;
+    padding-left:100px;
+    padding-right: 100px;
+    border-radius: 4px;
+    margin:auto;
+    margin-top:20px;
+}
+
+#sauce {
+    width:100px;
+    height:30px;
+    margin-top:20px;
+    margin-left:100px;
+    margin-right:100px;
+    border: 2px solid #f40057;
+    border-radius: 40px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#openSauce {
+    width:200px;
+    border:none;
+    border-radius: 40px;
+    font-size: 15px;
+    text-align: center;
+    color:white;
+    background-color: #f40057;
+    padding-top:10px;
+    padding-bottom:10px;
+    margin-top:20px;
+    margin-left:50px;
+    margin-right:50px;
+    cursor: pointer;
+}
+
+#openSauce:hover {
+    background-color: #ff5983;
+    transition: background-color 0.1s ease-in-out;
+}
