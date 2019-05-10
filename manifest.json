@@ -17,7 +17,9 @@
             ],
             "js" : [
                 "jquery.js",
-                "popup.js"
+                "popup.js",
+                "favs.js",
+                "history.js"
             ]
         }
     ],

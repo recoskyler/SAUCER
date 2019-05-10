@@ -8,14 +8,41 @@ html {
 body {
     margin:0;
     padding:0;
+    overflow: none;
 }
 
-#gridCont a {
+#menu {
+    display: inline-block;
+    position: relative;
+    width:100%;
+    height:auto;
+    margin:0;
+    padding:0;
+}
+
+#main {
+    height:250px;
+    width:100%;
+    overflow-x:hidden;
+    overflow-y:auto;
+    margin:0;
+}
+
+#gridCont {
+    background-color: #f40057;
+    margin:0;
+    padding:0;
+    width:100%;
+    box-shadow: 2px 0 2px 1px gray;
+
+}
+
+.mainB {
     padding:0px;
     padding-top:15px;
     padding-bottom:15px;
     margin:0;
-    width:100%;
+    width:220px;
     font-size:18px;
     color:white;
     background-color:#f40057;
@@ -24,7 +51,39 @@ body {
     text-align: center;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 1px;
-    cursor: default;;
+    border-bottom: 2px solid #ff5983;
+}
+
+.mini {
+    padding:0px;
+    padding-right:10px;
+    padding-left:10px;
+    padding-top:16px;
+    padding-bottom:16px;
+    margin:0;
+    width:20px;
+    font-size:18px;
+    color:white;
+    background-color:#f40057;
+    text-decoration: none;
+    float: left;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #ff5983;
+}
+
+#gridCont a:hover {
+    border-color:white;
+    transition: border-color 0.2s ease-in-out;
+}
+
+#gridCont img {
+    margin:0;
+    width:20px;
+    height:20px;
+    float: left;
+    cursor: pointer;
 }
 
 #saucerIcon {
@@ -34,39 +93,115 @@ body {
     padding-right: 100px;
     border-radius: 4px;
     margin:auto;
-    margin-top:20px;
+    margin-top:5px;
 }
 
 #sauce {
-    width:100px;
+    width:196px;
     height:30px;
-    margin-top:20px;
-    margin-left:100px;
-    margin-right:100px;
+    margin-top:10px;
+    margin-left:50px;
+    margin-right:50px;
     border: 2px solid #f40057;
     border-radius: 40px;
     font-size: 18px;
     text-align: center;
     font-weight: bold;
+    outline:none;
+    color:#484848;
 }
 
-#openSauce {
+#sauce:focus {
+    outline:none;
+}
+
+.btn {
     width:200px;
     border:none;
     border-radius: 40px;
     font-size: 15px;
     text-align: center;
     color:white;
-    background-color: #f40057;
     padding-top:10px;
     padding-bottom:10px;
-    margin-top:20px;
+    margin-top:5px;
     margin-left:50px;
     margin-right:50px;
     cursor: pointer;
+    outline: none;
+}
+
+.btn:focus {
+    outline:none;
+}
+
+#openSauce {
+    background-color: #304ffe;
+}
+
+.atf:hover {
+    background-color: #ffd149;
+    transition: background-color 0.1s ease-in-out;
 }
 
 #openSauce:hover {
-    background-color: #ff5983;
+    background-color: #7a7cff;
     transition: background-color 0.1s ease-in-out;
+}
+
+.selected {
+    border-color:white;
+}
+
+.historyList {
+    display:inline-block;
+    position:relative;
+    list-style: none;
+    width:300px;
+    height:auto;
+    margin:0;
+    padding:0;
+    margin-top:5px
+}
+
+.historyItem {
+    display:block;
+    position: relative;
+    float:left;
+    width: 65px;
+    border: 1px solid lightgray;
+    margin: 1px;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-right:1px;
+    padding-left:1px;
+    text-align: center;
+}
+
+.historyItem a {
+    width:51px;
+    padding:11px;
+    text-decoration: none;
+    color: gray;
+    font-size:14px;
+}
+
+.historyItem a:hover {
+    color: #f40057;
+    transition: color 0.2s ease-in-out;
+}
+
+.historyItem:hover {
+    border-color: #f40057;
+    transition: border-color 0.2s ease-in-out;
+}
+
+#clr {
+    display:inline-block;
+    position: relative;
+    text-decoration: none;
+    color: red;
+    margin:0;
+    padding:0;
+    margin-left:5px;
 }

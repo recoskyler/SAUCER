@@ -4,14 +4,15 @@
     <head>
         <link rel="stylesheet" type="text/css" href="style.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-        <script src="jquery.js"></script>
     </head>
 
     <body>
         <div id="menu">
             <nav>
                 <div id="gridCont">
-                    <a href="popup.html" class="selected">SAUCER</a>
+                    <a href="history.html" class="mini"><img src="history.png" alt="History" id="historyButton"/></a>
+                    <a href="popup.html" class="mainB selected">SAUCER</a>
+                    <a href="favs.html" class="mini"><img src="fav.png" alt="Favorites" id="favButton"/></a>
                 </div>
             </nav>
         </div>
@@ -20,9 +21,11 @@
             <div id="sub">
                 <img id="saucerIcon" src="icon128.png" alt="icon"/>
                 <input id="sauce" type="text" maxlength="6">
-                <button id="openSauce" type="button">OPEN SAUCE</button>
-                <script src="popup.js"></script>
+                <button class="btn" id="openSauce" type="button">OPEN SAUCE</button>
+                <button class="btn atf" id="atf" type="button">Add To Favorites</button>
             </div>
         </div>
+
+        <script src="popup.js"></script>
     </body>
 </html>
