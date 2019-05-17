@@ -4,20 +4,20 @@ getCode();
 
 function oS() {
     if (document.getElementById("sauce").value != "") {
-		chrome.storage.local.get({history : '[]'}, function (res) {
-			var arr = JSON.parse(res.history);
+			chrome.storage.local.get({history : '[]'}, function (res) {
+				var arr = JSON.parse(res.history);
 
-			if (!arr.includes(document.getElementById("sauce").value)) {
-				arr.push(document.getElementById("sauce").value);
-			}
+				if (!arr.includes(document.getElementById("sauce").value)) {
+					arr.push(document.getElementById("sauce").value);
+				}
 
-			chrome.storage.local.set({'history': JSON.stringify(arr)}, function () {
-				var url = 'https://nhentai.net/g/' + document.getElementById("sauce").value;
-				code = document.getElementById("sauce").value;
-				chrome.browserAction.setBadgeText({text:code});
-				window.open(url, '_blank');
+				chrome.storage.local.set({'history': JSON.stringify(arr)}, function () {
+					var url = 'https://nhentai.net/g/' + document.getElementById("sauce").value;
+					code = document.getElementById("sauce").value;
+					chrome.browserAction.setBadgeText({text:code});
+					window.open(url, '_blank');
+				});
 			});
-		});
     }
 }
 

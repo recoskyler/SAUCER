@@ -41,8 +41,20 @@ chrome.browserAction.setBadgeText({text:code});
 chrome.contextMenus.onClicked.addListener(function(clickData){
     if (clickData.menuItemId == "openSauce" && clickData.selectionText) {
         if (isInt(clickData.selectionText) && clickData.selectionText.length >= 1 && parseInt(clickData.selectionText, 10) > 0) {
-            var sauceURL = "https://nhentai.net/g/" + clickData.selectionText + "/";
-            chrome.tabs.create({ url: sauceURL });
+            chrome.storage.local.get({history : '[]'}, function (res) {
+				var arr = JSON.parse(res.history);
+
+				if (!arr.includes(clickData.selectionText)) {
+					arr.push(clickData.selectionText);
+				}
+
+				chrome.storage.local.set({'history': JSON.stringify(arr)}, function () {
+					var sauceURL = "https://nhentai.net/g/" + clickData.selectionText + "/";
+					code = clickData.selectionText;
+					chrome.browserAction.setBadgeText({text:code});
+					chrome.tabs.create({ url: sauceURL });
+				});
+			});
         }
     }
 });
