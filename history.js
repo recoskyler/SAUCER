@@ -1,13 +1,13 @@
 function makeUL(array) {
     var list = document.createElement('ul');
-    list.className = "historyList";
+    list.className = "historyList_saucer";
 
     for(var i = 0; i < array.length; i++) {
         var item = document.createElement('li');
         var link = document.createElement('a');
 
-        item.className = "historyItem";
-        link.className = "historyLink";
+        item.className = "historyItem_saucer";
+        link.className = "historyLink_saucer";
 
         console.log(array[i]);
 
@@ -33,7 +33,7 @@ chrome.storage.local.get({history : "[]"}, function (res) {
         return;
     }
 
-    document.getElementById('main').appendChild(makeUL(JSON.parse(res.history)));
+    document.getElementById('main_saucer').appendChild(makeUL(JSON.parse(res.history)));
 });
 
-document.getElementById("clr").onclick = clearHistory;
+document.getElementById("clr_saucer").onclick = clearHistory;

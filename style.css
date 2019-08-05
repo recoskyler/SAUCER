@@ -11,7 +11,7 @@ body {
     overflow: none;
 }
 
-#menu {
+#menu_saucer {
     display: inline-block;
     position: relative;
     width:100%;
@@ -20,7 +20,7 @@ body {
     padding:0;
 }
 
-#main {
+#main_saucer {
     height:250px;
     width:100%;
     overflow-x:hidden;
@@ -28,7 +28,7 @@ body {
     margin:0;
 }
 
-#gridCont {
+#gridCont_saucer {
     background-color: #f40057;
     margin:0;
     padding:0;
@@ -37,7 +37,7 @@ body {
 
 }
 
-.mainB {
+.mainB_saucer {
     padding:0px;
     padding-top:15px;
     padding-bottom:15px;
@@ -54,7 +54,7 @@ body {
     border-bottom: 2px solid #ff5983;
 }
 
-.mini {
+.mini_saucer {
     padding:0px;
     padding-right:10px;
     padding-left:10px;
@@ -73,12 +73,12 @@ body {
     border-bottom: 2px solid #ff5983;
 }
 
-#gridCont a:hover {
+#gridCont_saucer a:hover {
     border-color:white;
     transition: border-color 0.2s ease-in-out;
 }
 
-#gridCont img {
+#gridCont_saucer img {
     margin:0;
     width:20px;
     height:20px;
@@ -86,7 +86,7 @@ body {
     cursor: pointer;
 }
 
-#saucerIcon {
+#saucerIcon_saucer {
     width:100px;
     height:100px;
     padding-left:100px;
@@ -96,7 +96,7 @@ body {
     margin-top:5px;
 }
 
-#sauce {
+#sauce_saucer {
     width:196px;
     height:30px;
     margin-top:10px;
@@ -111,11 +111,11 @@ body {
     color:#484848;
 }
 
-#sauce:focus {
+#sauce_saucer:focus {
     outline:none;
 }
 
-.btn {
+.btn_saucer {
     width:200px;
     border:none;
     border-radius: 40px;
@@ -131,29 +131,29 @@ body {
     outline: none;
 }
 
-.btn:focus {
+.btn_saucer:focus {
     outline:none;
 }
 
-#openSauce {
+#openSauce_saucer {
     background-color: #304ffe;
 }
 
-.atf:hover {
+.atf_saucer:hover {
     background-color: #ffd149;
     transition: background-color 0.1s ease-in-out;
 }
 
-#openSauce:hover {
+#openSauce_saucer:hover {
     background-color: #7a7cff;
     transition: background-color 0.1s ease-in-out;
 }
 
-.selected {
+.selected_saucer {
     border-color:white;
 }
 
-.historyList {
+.historyList_saucer {
     display:inline-block;
     position:relative;
     list-style: none;
@@ -164,7 +164,7 @@ body {
     margin-top:5px
 }
 
-.historyItem {
+.historyItem_saucer {
     display:block;
     position: relative;
     float:left;
@@ -178,7 +178,7 @@ body {
     text-align: center;
 }
 
-.historyItem a {
+.historyItem_saucer a {
     width:51px;
     padding:11px;
     text-decoration: none;
@@ -186,17 +186,17 @@ body {
     font-size:14px;
 }
 
-.historyItem a:hover {
+.historyItem_saucer a:hover {
     color: #f40057;
     transition: color 0.2s ease-in-out;
 }
 
-.historyItem:hover {
+.historyItem_saucer:hover {
     border-color: #f40057;
     transition: border-color 0.2s ease-in-out;
 }
 
-#clr {
+#clr_saucer {
     display:inline-block;
     position: relative;
     text-decoration: none;
@@ -204,4 +204,5 @@ body {
     margin:0;
     padding:0;
     margin-left:5px;
+    cursor: pointer;
 }
