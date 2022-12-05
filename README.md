@@ -3,6 +3,8 @@
 **This is a NSFW extension! Not suitable for children under 18 years old!**
 **Use this extension at home/work/school etc. at your own risk!**
 
+<a href='https://ko-fi.com/recoskyler' target='_blank'><img height='35' style='border:0px;height:46px;' src='https://az743702.vo.msecnd.net/cdn/kofi3.png?v=0' border='0' alt='Buy Me a Coffee at ko-fi.com' />
+
 A Google Chrome/Chromium based browser extension for opening sweet sources by selecting the 1/6-digit SAUCE-CODE.
 
 ### Installation
