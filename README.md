@@ -7,6 +7,8 @@ A Google Chrome/Chromium based browser extension for opening sweet sources by se
 
 ### Installation
 
+This extension is not available on Chrome Web Store for obvious reasons.
+
 1. Download all files and place them in a folder. Folders location does not matter.
 2. Open Google Chrome or a Chromium based browser.
 3. Open 'Extensions' page. Click on the three dots or menu icon on the top-right corner. 'More Tools' > 'Extensions'.
